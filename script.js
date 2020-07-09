@@ -12,13 +12,31 @@ for (var i = 0; i < 5; i++) {
 }
 
 alert(array)
+var numeroPrompt = 0
+var numeriUtente = []
+var somma = []
 
-setInterval(myVar = parseInt(prompt("inserisci un numero")), 4000);
+setTimeout(function(){
+  for (var i = 0; i < 5; i++) {
+    numeriUtente.push(parseInt(prompt("inserisci un numero")))
+  console.log(numeroPrompt);
+  console.log(numeriUtente);
+  var control = (array.includes (numeriUtente[i]));
+
+  if (control == true) {
+    somma.push(numeriUtente[i])
+
+  }
+
+  console.log("somma = " + somma);
+  console.log("Hai indovintato " + somma.length + " numeri." + " I numeri che hai indovinato sono " + somma);
+}}, 30000);
+
+
+
 
 // var myVar = parseInt(prompt("inserisci un numero"))
 
-console.log(array);
-console.log("num "+ myVar);
 
 // var numeroUtente = prompt("inserisci numero")
 
@@ -36,6 +54,6 @@ function controlloNumeri (array, numero){
     i--
   }
   else {
-    array.push(getRand(1,100))
+    array.push(getRand(1,50))
   }
 }
