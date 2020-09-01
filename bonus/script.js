@@ -17,20 +17,22 @@ var numeriUtente = []
 var somma = []
 
 setTimeout(function(){
+  
   for (var i = 0; i < 5; i++) {
-    numeriUtente.push(parseInt(prompt("inserisci un numero")))
+
+  numeriUtente.push(parseInt(prompt("inserisci un numero")))
+
   console.log(numeroPrompt);
   console.log(numeriUtente);
+
   var control = (array.includes (numeriUtente[i]));
 
   if (control == true) {
     somma.push(numeriUtente[i])
-
   }
-
   console.log("somma = " + somma);
   console.log("Hai indovintato " + somma.length + " numeri." + " I numeri che hai indovinato sono " + somma);
-}}, 3000);
+}}, 1000);
 
 
 
